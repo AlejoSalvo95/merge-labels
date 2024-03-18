@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notes version="1">
+	<labels>
+		<label id="0" color="40D301">Label 0</label>
+		<label id="1" color="B0FFB0">Label 1</label>
+		<label id="2" color="CF54CC">Label 2</label>
+		<label id="3" color="5500">Label 3</label>
+		<label id="4" color="FFAEFF">Label 4</label>
+		<label id="5" color="80FF">Label 5</label>
+		<label id="6" color="303EFF">Label 6</label>
+		<label id="7" color="1985FF">Label 7</label>
+	</labels>
+	<note player="user1" label="1" update="1679833283"></note>
+</notes>

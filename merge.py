@@ -1,13 +1,22 @@
 import xml.etree.ElementTree as ET
 import xml.dom.minidom
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+base_route = os.getenv('NOTES_PATH')
+
+if base_route is None:
+    raise ValueError("Env variable 'NOTES_PATH' not found. Ensure it's set.")
+
+print(base_route)  
+
 
 def read_xml(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
     return root
-
-#Set base directory
-base_route = ""
 
 def merge_notes(xml1, xml2):
     merged = ET.Element("notes", version="1")
