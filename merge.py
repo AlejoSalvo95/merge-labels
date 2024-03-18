@@ -2,6 +2,7 @@ import xml.etree.ElementTree as ET
 import xml.dom.minidom
 from dotenv import load_dotenv
 import os
+from indent import prettify_xml_file
 
 load_dotenv()
 
@@ -65,4 +66,6 @@ xml2 = read_xml(base_route + 'second.xml')
 
 merged_xml = merge_notes(xml1, xml2)
 
-save_xml(merged_xml, base_route + 'merged.xml')
+save_xml(merged_xml, base_route + 'merged_messy.xml')
+
+prettify_xml_file(base_route + 'merged_messy.xml',  base_route + 'merged.xml')
